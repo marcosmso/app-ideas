@@ -4,6 +4,7 @@ minutes_counter = document.querySelector("#minutes-counter");
 seconds_counter = document.querySelector("#seconds-counter");
 button = document.querySelector("#button");
 date_input = document.querySelector(".date-input");
+time_input = document.querySelector(".time-input");
 
 const SECONDS_IN_MINUTE = 60;
 const SECONDS_IN_HOUR = 3600;
@@ -21,7 +22,12 @@ function getEventDateInput(){
     day   = parseInt(input.substring(8, 10));
     month = parseInt(input.substring(5, 7));
     year  = parseInt(input.substring(0, 4));
-    eventDate = new Date(year, month-1, day); //month must be 0-indexed for Date
+
+    input = time_input.value; // string in format HH-MM
+    hour = parseInt(input.substring(0, 2));
+    minute = parseInt(input.substring(3, 5));
+
+    eventDate = new Date(year, month-1, day, hour, minute, 0); //month must be 0-indexed for Date
 }
 
 function updateTimer() {
