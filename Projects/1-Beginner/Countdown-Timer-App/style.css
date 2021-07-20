@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -10,7 +11,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color:#cddafd;
+    background-color:#e9ecef;
+}
+
+h1{
+    margin-bottom:20px;
 }
 
 .container {
@@ -18,26 +23,57 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    background-color: #6c757d;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .row {
     display: flex;
     align-items: center;
+    padding: 10px 10px;
+}
+
+.clock-column{
+    margin: 7px;
+}
+
+.clock-timer {
+    display: flex;
+    align-items: center;
+    color: #131313;
+	font-size: 36px;
+	line-height: 1;
     justify-content: center;
     text-align: center;
-    border-radius: 5px;
-    padding: 20px 20px;
+}
+
+.clock-label {
+	padding-top: 10px;
+	text-transform: uppercase;
+	color: #131313;
+	font-size: 14px;
+	text-align: center;
+	border-top: 1px solid rgba(19, 19, 19, 0.5);
 }
 
 p {
-    font-size: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    height: 40px;
+    border-radius: 5px;
 }
 
 button {
     border-radius: 5px;
-    border: 1px #40916c solid;
-    width: 40%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 50px;
+    height: 30px;
 }
 
 .startBttn {

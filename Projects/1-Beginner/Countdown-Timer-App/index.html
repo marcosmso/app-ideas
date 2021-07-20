@@ -11,21 +11,47 @@
     <h1>Countdown Timer</h1>
     
     <div class="container">
-        <div class="row">
+        <div class="row inputs-container">
+            <input type="text" class="event-name" placeholder="Event Name" value="New Year's Eve">
             <input class="date-input" type="date" value="2022-01-01">
             <input class="time-input" type="time" value="00:00">
         </div>
+
         <div class="row">
-            <p id="days-counter">00</p>
-            <p> : </p>
-            <p id="hours-counter">00</p>
-            <p> : </p>
-            <p id="minutes-counter">00</p>
-            <p> : </p>
-            <p id="seconds-counter">00</p>
+            <button id="button" class="startBttn">Start</button>
         </div>
 
-        <button id="button" class="startBttn">Start</button>
+        <div class="row">
+
+            <div class="clock-column">
+                <p id="days-counter" class="clock-timer">00</p>
+                <p class="clock-label">Days</p>
+            </div>
+
+            <p class="clock-separator">:</p>
+
+            <div class="clock-column">
+                <p id="hours-counter" class="clock-timer">00</p>
+                <p class="clock-label">Hours</p>
+            </div>
+
+            <p class="clock-separator">:</p>
+
+            <div class="clock-column">
+                <p id="minutes-counter" class="clock-timer">00</p>
+                <p class="clock-label">Minutes</p>
+            </div>
+
+            <p class="clock-separator">:</p>
+
+            <div class="clock-column">
+                <p id="seconds-counter" class="clock-timer">00</p>
+                <p class="clock-label">Seconds</p>
+            </div>
+
+        </div>
+
+        
     </div>
     <script src="main.js"></script>
 </body>
