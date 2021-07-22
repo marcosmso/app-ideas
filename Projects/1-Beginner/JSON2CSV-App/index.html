@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON2CSV</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JSON2CSV</h1>
+    <div class="form-group">
+        <label for="json-textarea">JSON format</label>
+        <textarea id="json-textarea" class="form-control" rows="10" cols="80" placeholder="Enter your JSON data">
+[{"Id":1,"UserName":"Sam Smith"},
+{"Id":2,"UserName":"Fred Frankly"},
+{"Id":1,"UserName":"Zachary Zupers"}]
+        </textarea>
+    </div>
+
+    <div class="form-group">
+        <button id="btn-convert">Convert To CSV</button>
+    </div>
+
+    <div class="form-group">
+        <label for="csv-textarea">CSV format</label>
+        <textarea id="csv-textarea" class="form-control" rows="10" cols="80" placeholder="your CSV data"></textarea>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
